@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #f0f4f8, #d9e4f5);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      max-width: 380px;
+      width: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #0077b6;
+    }
+
+    .profile-name {
+      font-size: 22px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .profile-title {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .profile-bio {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .profile-links a {
+      text-decoration: none;
+      color: white;
+      background: #0077b6;
+      padding: 10px 16px;
+      margin: 5px;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .profile-links a:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="image1.jpg" alt="Profile Photo" class="profile-img" />
+    <h2 class="profile-name">VANSH RANA</h2>
+    <p class="profile-title">Developer</p>
+    <p class="profile-bio">
+      Passionate about crafting beautiful user interfaces and creating seamless web experiences. Loves JavaScript, design, and clean code.
+    </p>
+    <div class="profile-links">
+      <a href="index.html"> Thank You </a>
+    </div>
+  </div>
+
+</body>
+</html>
